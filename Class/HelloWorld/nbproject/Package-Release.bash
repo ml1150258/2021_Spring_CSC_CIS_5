@@ -13,8 +13,8 @@ CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/helloworld
-OUTPUT_BASENAME=helloworld
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/hello_world
+OUTPUT_BASENAME=hello_world
 PACKAGE_TOP_DIR=helloworld/
 
 # Functions

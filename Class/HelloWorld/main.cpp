@@ -1,7 +1,7 @@
 /*
     Author: Dr. Mark E. Lehr
     Date:   February 18th, 2021  11:12am
-    Purpose:C++ Template to be used in all programs
+    Purpose:First Program "Hello World"
     Version:First and Last
  */
 
@@ -27,6 +27,7 @@ int main(int argc, char** argv) {
     //Process, map inputs to outputs
     
     //Display your initial conditions as well as outputs.
+    cout<<"Hello World"<<endl;
     
     //Exit stage right
     return 0;
