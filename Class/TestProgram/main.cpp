@@ -1,13 +1,12 @@
 /*
     Author: Dr. Mark E. Lehr
     Date:   February 18th, 2021  11:12am
-    Purpose:First Program "Hello World"
+    Purpose:C++ Template to be used in all programs
     Version:First and Last
  */
 
 //System Libraries
 #include <iostream>    //Input/Output Library
-#include <cstdlib>     //Random Seed and Random Function
 using namespace std;   //Library Name-space
 
 //User Libraries
@@ -28,8 +27,8 @@ int main(int argc, char** argv) {
     //Process, map inputs to outputs
     
     //Display your initial conditions as well as outputs.
-    cout<<"Hello World"<<endl;
     
     //Exit stage right
     return 0;
 }
+

@@ -20,15 +20,18 @@ using namespace std;   //Library Name-space
 //Execution Begins Here
 int main(int argc, char** argv) {
     //Set the Random number seed
+    srand(static_cast<unsigned int>(time(0)));
     
     //Declare variables
+    int random;//Declare random number
     
     //Initialize variables
+    random=rand()%90+10;//[10,99]
     
     //Process, map inputs to outputs
     
     //Display your initial conditions as well as outputs.
-    cout<<"Hello World"<<endl;
+    cout<<"Random Number between 10 and 100 = "<<random<<endl;
     
     //Exit stage right
     return 0;
