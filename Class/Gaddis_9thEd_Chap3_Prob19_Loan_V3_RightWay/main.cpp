@@ -23,7 +23,7 @@ const char  PENNIES=100;    //Pennies to a Dollar
 //Execution Begins Here
 int main(int argc, char** argv) {
     //Declare variables
-    double  monPmnt,//Monthly Payment in $'s
+    float  monPmnt,//Monthly Payment in $'s
            intRate,//Interest Rate in Percent
            loanAmt,//Loan Amount in $'s
            totPaid,//Total Paid for the loan in $'s
@@ -36,10 +36,15 @@ int main(int argc, char** argv) {
     nmCmpd=36;           //36 months
     
     //Process, map inputs to outputs
-    float temp=pow(1+intRate,nmCmpd);
-    monPmnt=intRate*temp*loanAmt/(temp-1);
+    //The utility variable improves readability and computation efficiency
+    float temp = pow(1+intRate,nmCmpd);               //Utility Variable
+    monPmnt = (intRate * temp * loanAmt) / (temp - 1);//Monthly Payment Formula
+    
+    //To eliminate fractional pennies -> shift-truncate-shift back
     int mPmnt=(monPmnt+HALFPNY)*PENNIES;//Shift left 2 places number of pennies
     monPmnt=1.0f*mPmnt/PENNIES;         //Shift right 2 places for Dollars
+    
+    //Calculate how much the loan cost you!
     totPaid=nmCmpd*monPmnt;
     intPaid=totPaid-loanAmt;
     
