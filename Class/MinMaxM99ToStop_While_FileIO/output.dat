@@ -1,0 +1,22 @@
+This program finds the min and max value of inputs
+Input the next value +Integer, -99 to stop
+10
+Input the next value +Integer, -99 to stop
+20
+Input the next value +Integer, -99 to stop
+30
+Input the next value +Integer, -99 to stop
+40
+Input the next value +Integer, -99 to stop
+50
+Input the next value +Integer, -99 to stop
+60
+Input the next value +Integer, -99 to stop
+100
+Input the next value +Integer, -99 to stop
+5
+Input the next value +Integer, -99 to stop
+-99
+
+The Minimum value found in the input sequence = 5
+The Maximum value found in the input sequence = 100

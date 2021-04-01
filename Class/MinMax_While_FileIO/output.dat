@@ -1,0 +1,12 @@
+This program finds the min and max value of positive inputs
+10
+20
+30
+40
+50
+60
+100
+5
+
+The Minimum value found in the input sequence = 5
+The Maximum value found in the input sequence = 100
