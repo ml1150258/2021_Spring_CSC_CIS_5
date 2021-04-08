@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
     //Initialize
     x=1.0f;
     apprxE=1.0f;
-    n=5;
+    n=10;
    
     for(int i=1;i<n;i++){
         //Initialize variables

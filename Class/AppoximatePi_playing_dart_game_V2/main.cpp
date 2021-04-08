@@ -16,7 +16,7 @@ using namespace std;   //Library Name-space
 //Global/Universal Constants -- No Global Variables
 //Science, Math, Conversions, Higher Dimensioned constants only
 const float PI=4*atan(1);//A definition of PI
-const unsigned int MAXRND=(1<<31)-1; 
+const unsigned int MAXRND=(1<<31)-1; //2^31-1
 
 //Function Prototypes
 

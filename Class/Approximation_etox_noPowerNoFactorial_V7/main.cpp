@@ -29,11 +29,11 @@ int main(int argc, char** argv) {
                x;//The exponential term e(x)
     
     //Initialize the sequence of terms to use in the approximation
-    nterms=15;
+    nterms=10;
     
     for(int n=1;n<=nterms;n++){
         //Initialize
-        x=3.0f;
+        x=1.0f;
         apprxE=1.0f;
         float xdivi=1;
 
