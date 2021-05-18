@@ -35,7 +35,13 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/_ext/18beae6e/Menu.o \
+	${OBJECTDIR}/_ext/18beae6e/Problem1.o \
+	${OBJECTDIR}/_ext/18beae6e/Problem2.o \
+	${OBJECTDIR}/_ext/18beae6e/Problem4.o \
+	${OBJECTDIR}/_ext/18beae6e/Problem5.o \
+	${OBJECTDIR}/_ext/18beae6e/Problem6.o \
+	${OBJECTDIR}/_ext/18beae6e/Problem7.o
 
 
 # C Compiler Flags
@@ -60,12 +66,42 @@ LDLIBSOPTIONS=
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/testprogram.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/testprogram ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/testprogram ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/main.o: main.cpp
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/_ext/18beae6e/Menu.o: ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Menu.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/18beae6e
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/18beae6e/Menu.o ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Menu.cpp
+
+${OBJECTDIR}/_ext/18beae6e/Problem1.o: ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem1.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/18beae6e
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/18beae6e/Problem1.o ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem1.cpp
+
+${OBJECTDIR}/_ext/18beae6e/Problem2.o: ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem2.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/18beae6e
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/18beae6e/Problem2.o ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem2.cpp
+
+${OBJECTDIR}/_ext/18beae6e/Problem4.o: ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem4.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/18beae6e
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/18beae6e/Problem4.o ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem4.cpp
+
+${OBJECTDIR}/_ext/18beae6e/Problem5.o: ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem5.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/18beae6e
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/18beae6e/Problem5.o ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem5.cpp
+
+${OBJECTDIR}/_ext/18beae6e/Problem6.o: ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem6.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/18beae6e
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/18beae6e/Problem6.o ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem6.cpp
+
+${OBJECTDIR}/_ext/18beae6e/Problem7.o: ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem7.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/18beae6e
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/18beae6e/Problem7.o ../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem7.cpp
 
 # Subprojects
 .build-subprojects:

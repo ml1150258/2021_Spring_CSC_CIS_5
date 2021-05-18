@@ -12,7 +12,13 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>main.cpp</itemPath>
+      <itemPath>../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Menu.cpp</itemPath>
+      <itemPath>../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem1.cpp</itemPath>
+      <itemPath>../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem2.cpp</itemPath>
+      <itemPath>../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem4.cpp</itemPath>
+      <itemPath>../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem5.cpp</itemPath>
+      <itemPath>../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem6.cpp</itemPath>
+      <itemPath>../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem7.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -36,7 +42,40 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Menu.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem1.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem2.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem4.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem5.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem6.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem7.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -59,7 +98,40 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Menu.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem1.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem2.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem4.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem5.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem6.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../../../Grades/Spring2021/CSC17a/Midterm/anciramikayla_40879_6323947_Midterm_CSC17A_MikaylaAncira/Midterm/Problem7.cpp"
+            ex="false"
+            tool="0"
+            flavor2="0">
       </item>
     </conf>
   </confs>
