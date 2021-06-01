@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Dr. Mark E. Lehr
- * Created on February 2nd, 2021, 11:00 AM
- * Purpose:  Selection Sort
+ * Created on June 1st, 2021, 11:00 AM
+ * Purpose:  Mark Sort Static Array
  */
 
 //System Libraries
@@ -17,7 +17,7 @@ using namespace std;
 //Math, Science, Universal, Conversions, High Dimensioned Arrays
 void fillAry(int [],int);
 void prntAry(int [],int,int);
-void selcSrt(int [],int);
+void markSrt(int [],int);
 
 //Function Prototypes
 
@@ -26,35 +26,35 @@ int main(int argc, char** argv) {
     //Initialize the Random Number Seed
     srand(static_cast<unsigned int>(time(0)));
     
-    //Declare Variables
+    //Declare Variables Static Array
     const int SIZE=100;//Size of the Array
     int array[SIZE];   //Array
     
     //Initialize Variables
     fillAry(array,SIZE);
+    cout<<"Array before Sorting"<<endl;
     prntAry(array,SIZE,10);
     
     //Map Inputs to Outputs -> Process
-    selcSrt(array,SIZE);
+    markSrt(array,SIZE);
     
     //Display Inputs/Outputs
+    cout<<"Array after Sorting"<<endl;
     prntAry(array,SIZE,10);
     
     //Exit the Program - Cleanup
     return 0;
 }
 
-void selcSrt(int a[],int n){
+void markSrt(int a[],int n){
     for(int i=0;i<n-1;i++){      //Loop for each position in List
-        int idxMin=i;
         for(int j=i+1;j<n;j++){  //Loop to swap with first in List
-            if(a[idxMin]>a[j]){  //Put the smallest at top of List
-                idxMin=j;
+            if(a[i]>a[j]){       //Put the smallest at top of List
+                a[i]=a[i]^a[j];  //In place Swap
+                a[j]=a[i]^a[j];  //In place Swap
+                a[i]=a[i]^a[j];  //In place Swap
             }
         }
-        int temp=a[i];
-        a[i]=a[idxMin];
-        a[idxMin]=temp;
     }
 }
 

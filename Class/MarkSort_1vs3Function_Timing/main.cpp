@@ -18,6 +18,10 @@ using namespace std;
 void fillAry(int [],int);
 void prntAry(int [],int,int);
 void markSort(int [],int);
+void mrkSort(int [],int);
+void smlVal(int [],int,int);
+void swap(int &, int &);
+void copy(int [],int [],int);
 
 //Function Prototypes
 
@@ -27,37 +31,70 @@ int main(int argc, char** argv) {
     srand(static_cast<unsigned int>(time(0)));
     
     //Declare Variables
-    const int SIZE=140000;//Size of the Array
-    int array[SIZE];   //Array
+    const int SIZE=160000;//Size of the Array
+    int array[SIZE],brray[SIZE];   //Array
     
     //Initialize Variables
     fillAry(array,SIZE);
-    //prntAry(array,SIZE,5);
+    copy(brray,array,SIZE);
+    //prntAry(array,SIZE,10);
+    //prntAry(brray,SIZE,10);
+    cout<<"The size of the arrays to sort = "<<SIZE<<endl<<endl;
     
     //Map Inputs to Outputs -> Process
     int beg=time(0);
     markSort(array,SIZE);
     int end=time(0);
+    cout<<"1 Function Mark Sort Runtime = "<<end-beg<<" secs"<<endl<<endl;
+     
+    beg=time(0);
+    mrkSort(brray,SIZE);
+    end=time(0);
+    cout<<"3 Function Mark Sort Runtime = "<<end-beg<<" secs"<<endl<<endl;
 
-    cout<<"Runtime = "<<end-beg<<" secs"<<endl<<endl;
         
     //Display Inputs/Outputs
-    //prntAry(array,SIZE,5);
+    //prntAry(array,SIZE,10);
+    //prntAry(brray,SIZE,10);
     
     //Exit the Program - Cleanup
     return 0;
+}
+
+void copy(int b[],int a[],int n){
+    for(int i=0;i<n;i++){
+        b[i]=a[i];
+    }
 }
 
 void markSort(int a[],int n){
     for(int i=0;i<n-1;i++){      //Loop for each position in List
         for(int j=i+1;j<n;j++){  //Loop to swap with first in List
             if(a[i]>a[j]){       //Put the smallest at top of List
-                a[i]=a[i]^a[j];  //In place Swap
-                a[j]=a[i]^a[j];  //In place Swap
-                a[i]=a[i]^a[j];  //In place Swap
+                int temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
             }
         }
     }
+}
+
+void mrkSort(int a[],int n){
+    for(int i=0;i<n-1;i++)
+        smlVal(a,n,i);
+}
+
+void smlVal(int a[],int n,int pos){
+    for(int i=pos+1;i<n;i++){
+        if(a[i]<a[pos])
+            swap(a[pos],a[i]);
+    }
+}
+
+void swap(int &a, int &b){
+    int temp=a;
+    a=b;
+    b=temp;
 }
 
 void prntAry(int a[],int n,int perLine){
@@ -72,5 +109,6 @@ void prntAry(int a[],int n,int perLine){
 void fillAry(int a[],int n){
     for(int i=0;i<n;i++){
         a[i]=rand();//[0,2^31-1]
+        //a[i]=rand()%90+10;//[10,99]
     }
 }
